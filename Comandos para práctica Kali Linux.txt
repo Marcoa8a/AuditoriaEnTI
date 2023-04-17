@@ -1,0 +1,32 @@
+Root Terminal Emulator -> Abrir una terminal de este tipo
+Comando: wifite
+ctrI*C cuando ya aparezca la red
+Escribir el número de la red, por ejemplo 3
+Hex Key: Recordar la contraseña
+Quitarlo de modo monitor
+Abrir una terminal de Kali
+sudo service networkManager start
+sudo ip link set wlan0 down // Aapagar la tarjeta
+sudo iw wlan0 set type managed //Quitar modo promiscuo cambiar a
+tipo managed
+sudo ip link set wlan0 up //Habilitar la tarjeta
+sudo service NetworkManager start //Activar el servicio
+Nos vamos a redes disponibles y la buscamos
+Poner la contraseña en hexadecimal sin los dos puntos
+Paso: Buscar un servidor ftp que se encuentra
+primero usar el comando ifconfig para buscar nuestra IP (192.168.1.66)
+nmap -V -sn 192.168.1.0/24
+buscar los host activos de la red host up]
+Abrir otra terminal Root
+map -V -A 192.168.1.65 Buscar los puertos de la dirección IP
+Comando: ftp Activar la tranferencia de archivos
+Comando: open
+Dirección a done se quiere buscar: 192.168.1.65 1024(puerto)
+Name: Admin
+Password: Admin
+Is Ver lista de archivos
+put Descargar los archivos del servidor de ftp
+(local-file)
+get nombrearchivo.jpg nombrearchivo.jpg para descargarlo
+put nombrearchivo.jpg nombrearchivo.jpq para subirlo
+Comando: bye salir del protocolo
